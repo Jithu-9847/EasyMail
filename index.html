@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Easy Mail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body  >
+
+    <div id="container" class="curve back" >
+        <img src="icons8-menu.svg" alt="" srcset="" id="menu">
+
+        <img src="home2.svg" alt="" style="height: 40px; border-bottom: 3px solid rgb(9, 255, 0); padding: 2px;" id="home" onclick="location.replace('index.html')" title="home">
+        <img src="icons8-about.svg" alt="" id="about" style="height: 40px;" onclick="location.replace('about.html')" title="About us">
+        <img src="icons8-contact-us-32.png" alt="" srcset="" id="contact"  style="height: 40px;" title="contact">
+        <img src="plus_white.svg" alt="" id="compose_plus" onclick="location.replace('compose.html')" title="Compose an Email">
+        <div id="separate">
+
+        </div>
+        
+        <img src="web_logo.png" alt=""  id="web_logo_img">
+
+        <h1   id="home_head">Easy Mail-Easy as possible</h1>
+        <p  id="home_intro">Are you tired of sign in again and again to compose and send <br> an email?
+            Then your are in the right place,Don't waste your time just compose an Email right now! </p><br>
+ 
+
+            <div id="compose" onclick="compose()"><h1>Compose</h1><img src="g76.svg" alt="" srcset="" id="plus"></div>
+             
+        
+    </div>
+     
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

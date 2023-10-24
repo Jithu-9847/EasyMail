@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Easy Mail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="con2">
+</div>
+ 
+    <div id="container" class="curve">
+        <img src="icons8-menu.svg" alt="" srcset="" id="menu">
+
+        <img src="home2.svg" alt="" style="height: 40px;" id="home" onclick="location.replace('index.html')"
+            title="home">
+        <img src="icons8-about.svg" alt="" id="about" style="height: 40px;" onclick="location.replace('about.html')"
+            title="About us">
+        <img src="icons8-contact-us-32.png" alt="" srcset="" id="contact" style="height: 40px;" title="Contact">
+        <img src="plus_white.svg" alt="" id="compose_plus" style="border-bottom: 3px solid rgb(0, 255, 4);"
+            title="Compose an Email">
+        <img src="web_logo.png" alt="" id="app_logo">
+        <div id="search">
+            <img src="icons8-search-50.png" alt="">
+        </div>
+        <input type="text" name="" id="search_box" placeholder="Search...">
+        <div id="con_left" class="curve">
+            <h1>Note:</h1><br>
+            <p>This is a small website created for sending emails without any sign in or login</p>
+            <p>Here you can see that there is a email form on the right of this website,with some input fields.</p>
+            <p>Kindly fill the reqired field and then click on the send button at bottom right position.</p>
+            <p>Please make sure that the email that you are going to enter is valid Email ID</p>
+            <p>Please dont use this service for any illegal activities.If any activities are committed using this
+                service ,This website or the developer are not be responsble for that.</p>
+            <p>For the security reason ,Some of the data are collected.</p>
+        </div>
+
+        <div id="email" class="curve">
+
+            <h1 id="rec_head">Receiver email</h1><input type="email" name="" id="mail_id" class="input"
+                placeholder="Enter the Email..." required>
+            <h1 id="sub_head">Subject</h1><input type="text" name="" id="sub" class="input"
+                placeholder="Enter the subject here...">
+            <h1 id="body_head">Body</h1>
+
+            <label for="file"><img src="link-file.png" alt="" style="height: 30px;" id="attach"
+                    title="Attach a file"></label><br><br>
+            <input type="file" name="" id="file" name="file" style="display: none;" onchange="convertFile()">
+
+            <textarea name="" id="body" cols="37" rows="10" placeholder="Enter the message..."></textarea>
+            <button id="send" onclick="send()" class="curve" type="submit"><img src="send.png" alt=""
+                    style="height: 60px;" id="sendimg"></button>
+
+
+            <div id="advance">
+                <img src="Group 10.png" alt="" class="option" title="convert text in body to uppercase" id="up"
+                    onclick="to_up()">
+                <img src="Group 8.png" alt="" class="option" title="convert body to lowercase" id="lower"
+                    onclick="to_low()">
+                <img src="Group 3.svg" alt="" class="option" title="Remove unwanted white spaces" onclick="space()">
+                <img src="Group 6.svg" alt="" class="option" title="Clear all text in the body" onclick="clearall()">
+                <img src="replace.svg" alt="" class="option" title="Find and Replace word or letter"
+                    onclick="re_place()">
+            </div>
+            <div  style="position: absolute; top: 71%; left: 1%;  height: 50px; width: 300px; padding: 3px;">
+                <h3 style="position: absolute; top: -10%; " id="attach_name"></h3>
+            </div>
+            <div id="progress" style="position: absolute; width: 300px; height: 300px; background-color: rgb(255, 255, 255); top: 50%; transform: translate(-50%,-50%); right: 50%; border-radius: 20px; display: none;">
+            
+                <h2 style="position: absolute; left: 50%; transform: translateX(-50%); color: rgb(0, 51, 255); width: 300px; text-align: center;" id="progress_line"></h2>
+                <img src="" alt="" style="width: 200px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);" id="progress_img">
+                <h2 style="position: absolute; left: 50%; transform: translateX(-50%); color: rgb(0, 51, 255); width: 300px; text-align: center; bottom: 10%;" id="progress_line2" ></h2>
+
+            </div>
+        </div>
+
+         
+
+    </div>
+     
+
+    </div>
+    <div id="blur">
+
+    </div>
+    <div id="pop_up">
+        <img src="cancel.svg" alt="" style="height: 300px;" id="cancel">
+        <h2 id="find_head">Find:</h2><input type="text" name="" id="find"><br>
+        <h2 id="replace_head">Replace:</h2><input type="text" name="" id="replace">
+        <select name="select_option" id="select">
+            <option value="Replace one by one" selected>Replace one by one</option>
+            <option value="Replace All">Replace All</option>
+
+        </select>
+        <button id="replace_btn">Replace</button>
+
+    </div>
+ 
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

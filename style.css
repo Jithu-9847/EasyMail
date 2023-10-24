@@ -1,0 +1,658 @@
+ 
+
+#container{
+
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background-color:rgb(35 34 39);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#app_logo{
+    position: absolute;
+    height: 60px;
+    top:  9%;
+    left:  44%;
+    z-index: 1;
+}
+#email{
+    position: absolute;
+    height: 90%;
+    width: 55%;
+    right: 2%;
+    top: 7%;
+    background-color:  #AEAEAE;
+}
+ 
+#con_left{
+    position: absolute;
+    height: 80%;
+    width: 35%;
+    left: 6.5%;
+    top: 15.5%;
+    background-color:  rgb(114, 116, 124);
+     padding: 5px;
+     color: white;
+     font-size: 15px;
+      
+}
+#search{
+    position: absolute;
+    width: 34.5%;
+    height: 7%;
+    left: 6.5%;
+    top: 7%;
+    border: none;
+    z-index: 2;
+    background-color: white;
+    border-radius: 20px;
+}
+#search_box{
+    position: absolute;
+    width: 28%;
+    height: 6.5%;
+    left: 11%;
+    top: 7%;
+    border: none;
+    z-index: 2;
+    background-color: white;
+    font-size: 20px;
+     
+    
+}
+
+#send{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right:4%;
+    bottom: 4%;
+    border: none;
+    background-color: #20253A;
+    transition: 0.75s;
+     
+}
+#send:hover{
+    width: 90px;
+    height: 90px;
+}
+.curve{
+    border-radius: 20px;
+}
+
+.input{
+    height: 50px;
+    width: 400px;
+    position: absolute;
+    left: 40%;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#rec_head{
+    position: absolute;
+    top: 15%;
+    left: 4%;
+}
+#sub_head{
+    position: absolute;
+    top: 30%;
+    left: 4%;
+}
+#body_head{
+    position: absolute;
+    top: 45%;
+    left: 4%;
+}
+#mail_id{
+    position: absolute;
+    top: 20%;
+}
+#sub{
+    position: absolute;
+    top: 34%;
+}
+#body{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+}
+
+#advance{
+    position: absolute;
+    bottom: 2%;
+    left: 3%;
+    height: 80px;
+    width: 70%;
+    
+}
+.option{
+    margin-left: 25px;
+    z-index: 2;
+    height: 80%;
+    transition: 1s;
+    cursor: pointer;
+}
+ 
+  #home{
+    position: absolute;
+    top: 20%;
+    left: 20px;
+    padding: 2px;
+    cursor: pointer;
+  }
+  #menu{
+    position: absolute;
+    top: 6%;
+    left: 20px;
+    cursor: pointer;
+  }
+  #about{
+    position: absolute;
+    top: 30%;
+    left: 20px;
+    cursor: pointer;
+    padding: 2px;
+  }
+  #contact{
+    position: absolute;
+    top: 40%;
+    left: 20px;
+    cursor: pointer;
+    padding: 2px;
+  }
+  #compose_plus{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    height: 40px;
+    cursor: pointer;
+    padding: 2px;
+  }
+
+#attach{
+
+    position: absolute;
+    top: 74%;
+    left: 40.5%;
+    z-index: 1;
+    border-radius:6px;
+    border: 1px solid black;
+    opacity: 0.3;
+     
+}
+
+#pop_up{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: aliceblue;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    display: none;
+}
+#blur{
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    background-color:rgba(13, 13, 13, 0.549);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    display: none;
+}
+ #find{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    height: 30px;
+    width: 200px;
+ }
+ #replace{
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    height: 30px;
+    width: 200px;
+ }
+#find_head{
+    position: absolute;
+    left: 2%;
+    top: 17%;
+    height: 30px;
+    width: 200px;
+}
+#replace_head{
+    position: absolute;
+    left: 2%;
+    top: 37%;
+    height: 30px;
+    width: 200px;
+}
+#replace_btn{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: 70%;
+    height: 30px;
+    width: 200px;
+    background-color:#20253A;
+    color: white;
+    cursor: pointer;
+}
+#cancel{
+    position: absolute;
+    right: -23%;
+    top: -20%;
+    cursor: pointer;
+}
+
+#select{
+    position: absolute;
+    width: 20px;
+    left: 86.7%;
+    top: 40%;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+/* -----------------------------------------------------home page-------------------------------------------------------- */
+
+
+.back{
+     
+    background-image: url("background_home.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    
+}
+#separate{
+    width: 5px;
+    height: 90%;
+    background-color: rgb(219, 219, 219);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 7%;
+    border-radius: 10px;
+}
+#compose{
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    left: 40%;
+    top: 70%;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.864);
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+
+}
+#compose h1{
+    position: absolute;
+    top: -17%;
+    font-family: sans-serif;
+    left: 7%;
+}
+#plus{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 30px;
+}
+#web_logo_img{
+    height: 60px; position: absolute; left: 10%; top: 5%;
+}
+#home_intro{
+    position: absolute; color: white; left: 16%; top: 40%; font-size:  25px; font-family: sans-serif; width: 750px; line-height: 50px; letter-spacing: 1px;
+}
+#home_head{
+    position: absolute; color: white; left: 16%; top: 10%; font-size: 45px; font-family: sans-serif;
+}
+#about1{
+    position: absolute;
+    left: 10%;
+}
+/* ------------------------------media query-------------------------- */
+@media (max-width:1100px){
+
+    #rec_head{
+        font-size: 25px;
+    }
+    #sub_head{
+        font-size: 25px;
+    }
+    .input{
+        width: 300px;
+        font-size: 25px;
+    }
+    .option{
+        height: 60px;
+        margin-left: 10px;
+    }
+}
+@media (max-width:1000px){
+
+    #rec_head{
+        font-size: 25px;
+    }
+    #sub_head{
+        font-size: 25px;
+    }
+    .input{
+        width: 300px;
+        font-size: 25px;
+    }
+    .option{
+        height: 60px;
+        margin-left: 10px;
+    }
+    #con_left{
+        top: 105%;
+        width: 83.5%;
+        left: 13%;
+    }
+    #search{
+        display: none;
+    }
+    #search_box{
+        display: none;
+    }
+    #email{
+        width: 85%;
+    }
+    #attach_name{
+        font-size: 15px;
+    }
+    #body_head{
+        font-size: 25px;
+    }
+    #con2{
+        position: absolute;
+        height: 200%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 20px;
+        width: 95%;
+        background-color: rgb(35 34 39);
+    }
+}
+@media (max-width:900px) {
+    
+    #separate{
+        left: 10%;
+    }
+
+    #web_logo_img{
+        position: absolute;
+        left: 15%;
+    }
+    #home_intro{
+        width: 700px;
+    }
+}
+
+@media (max-width:800px) {
+    #home_intro{
+        width: 600px;
+    }
+    #compose{
+        top: 80%;
+    }
+    #separate{
+        left: 13%;
+    }
+    #about1{
+        left: 20%;
+    }
+}
+@media (max-width:700px) {
+    #home_intro{
+        width: 500px;
+        color: rgb(226, 11, 11);
+        font-weight: bolder;
+    }
+    #separate{
+        left: 14%;
+    }
+
+    #web_logo_img{
+        position: absolute;
+        left: 20%;
+    }
+    .option{
+        height: 55px;
+    }
+    
+}
+@media (max-width:600px) {
+    #progress{
+        left: 45%;
+        border: 3px solid black;
+    }
+    #home_intro{
+        width: 400px;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+    }
+    #separate{
+        left: 14%;
+    }
+
+    #web_logo_img{
+        position: absolute;
+        left: 20%;
+    }
+    #container{
+        background-color:#20253A;
+        background-image: none;
+    }
+    #about1{
+        left: 20%;
+    }
+
+
+    #rec_head{
+        font-size: 20px;
+        top: 20%;
+    }
+    #sub_head{
+        top: 32%;
+        font-size: 20px;
+    }
+    .input{
+        width: 240px;
+        font-size: 25px;
+        font-size: 15px;
+    }
+    .option{
+        height: 40px;
+        
+        margin-left: 10px;
+    }
+    #app_logo{
+        left: 20%;
+    }
+
+#attach_name{
+    top: 80%;
+}
+    #home{
+        
+        
+        left: 10px;
+         
+      }
+      #menu{
+        
+        left: 10px;
+        
+      }
+      #about{
+         
+        left: 10px;
+        
+      }
+      #contact{
+         
+        
+        left: 10px;
+         
+      }
+      #compose_plus{
+         
+        left: 10px;
+        
+      }
+    
+}
+@media (max-width:500px) {
+
+
+    #con_left{
+        top: 115%;
+        width: 92%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+#app_logo{
+    top: 21%;
+    left: 5%;
+}
+#attach{
+    top: 70%;
+}
+    #rec_head{
+        font-size: 19px;
+    }
+    .input{
+        width: 210px;
+    }
+    #email{
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+    }
+    #home_intro{
+        width: 350px;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        font-size: 15px;
+        line-height: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #separate{
+        left: 14%;
+        display: none;
+    }
+
+    #web_logo_img{
+        position: absolute;
+        left: 20%;
+    }
+    #menu{
+        display: none;
+    }
+    #home{
+        top: 5%;
+    }
+    #about{
+        top: 5%;
+        left: 30%;
+    }
+    #contact{
+        top: 5%;
+        left: 55%;
+    }
+    #compose_plus{
+        top: 5%;
+        left: 75%;
+    }
+    #home_head{
+        font-size: 25px;
+        width: 400px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+    #web_logo_img{
+        top: 20%;
+        left: 10%;
+    }
+    #compose{
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width:500px) {
+    #home_intro{
+        width: 300px;
+    }
+    #about1{
+        top: 20%;
+    }
+    #home_head{
+        top: 15%;
+    }
+    #web_logo_img{
+        top: 30%;
+        left: 5%;
+}
+}
+
+@media (max-width:400px) {
+    #rec_head{
+        top: 13%;
+        font-size: 24px;
+    }
+    #sub_head{
+        top: 26%;
+        font-size: 24px;
+         
+    }
+    .input{
+        width: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #body_head{
+        top: 40%;
+    }
+    #body{
+        left: 1%;
+    }
+    #attach{
+        left: 4%;
+        top: 74%;
+    }
+    #send{
+        width: 65px;
+        height: 65px;
+    }
+     #sendimg{
+        height: 20px;
+        width: 40px;
+     }
+
+}
