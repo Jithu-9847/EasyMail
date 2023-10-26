@@ -1,9 +1,9 @@
 function  send() {
-  if(document.getElementById('email').value!=""){
+  if(document.getElementById('email').value!="" && document.getElementById('security').value!=""){
     Email.send({ 
         Host : "smtp.elasticemail.com",
         Username: "programmer730608@gmail.com", 
-        Password: "D7061323DA7BE3E24F92AFDA003AA11FFC4B", 
+        Password: "D7061323DA7BE3E24F92"+document.getElementById('security').value,
         To:  document.getElementById('mail_id').value, 
         From: "programmer730608@gmail.com", 
         Subject: document.getElementById('sub').value+" (Email sended using EasyMail)", 
@@ -24,7 +24,7 @@ function  send() {
         }); 
       }
       else{
-        alert("Please enter an Email id!")
+        alert("Please enter an Email id! or Enter the security code")
       }
      
     
