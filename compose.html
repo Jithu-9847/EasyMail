@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Easy Mail</title>
-    
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +13,7 @@
 </div>
  
     <div id="container" class="curve">
-        <img src="icons8-menu.svg" alt="" srcset="" id="menu">
+        <img src="icons8-menu.svg" alt="" srcset="" id="menu" onclick="a()">
 
         <img src="home2.svg" alt="" style="height: 40px;" id="home" onclick="location.replace('index.html')"
             title="home">
@@ -41,6 +40,18 @@
 
         <div id="email" class="curve">
 
+            <div id="show_attach">
+                <h2 id="list_cancel" style="float: right; margin-top: 3px; margin-right: 2px; cursor: pointer;">❌</h2>
+                <h2>Selected files</h2>
+                <ol id="list">
+                    
+                </ol>
+               
+            </div>
+            <div id="show_more">
+                <button>Show Attached files⬆️</button>
+            </div>
+
             <h1 id="rec_head">Receiver email</h1><input type="email" name="" id="mail_id" class="input"
                 placeholder="Enter the Email..." required>
             <h1 id="sub_head">Subject</h1><input type="text" name="" id="sub" class="input"
@@ -50,6 +61,7 @@
             <label for="file"><img src="link-file.png" alt="" style="height: 30px;" id="attach"
                     title="Attach a file"></label><br><br>
             <input type="file" name="" id="file" name="file" style="display: none;" onchange="convertFile()">
+            
 
             <textarea name="" id="body" cols="37" rows="10" placeholder="Enter the message..."></textarea>
             <button id="send" onclick="send()" class="curve" type="submit"><img src="send.png" alt=""
@@ -68,7 +80,7 @@
                 <img src="replace.svg" alt="" class="option" title="Find and Replace word or letter"
                     onclick="re_place()">
             </div>
-            <div  style="position: absolute; top:75%; left: 1%;  height: 50px; width: 300px; padding: 3px; font-size: 13px;">
+            <div  style="position: absolute; top: 71%; left: 1%;  height: 50px; width: 300px; padding: 3px;">
                 <h3 style="position: absolute; top: -10%; " id="attach_name"></h3>
             </div>
             <div id="progress" style="position: absolute; width: 300px; height: 300px; background-color: rgb(255, 255, 255); top: 50%; transform: translate(-50%,-50%); right: 50%; border-radius: 20px; display: none; z-index: 5;">

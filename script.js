@@ -1,9 +1,8 @@
 
-// ---------------------------------------------------animation-------------------------------------------------------------
 
- 
 
 function  send() {
+  
   if(document.getElementById('email').value!="" && document.getElementById('security').value!=""){
     Email.send({ 
         Host : "smtp.elasticemail.com",
@@ -51,14 +50,20 @@ function convertFile(){
       
       document.getElementById('progress_img').setAttribute('src','successfully-done.gif');
       document.getElementById('progress_line').innerText="Uploaded successfully";
-      document.getElementById('attach_name').innerText="Attachment:"+file.name;
+      
       setTimeout(() => {
         document.getElementById('progress').style.display="none";
       },  3000);
       allConvertedFiles.push({name : file.name, data : dataUri});
+      document.getElementById("attach").setAttribute("src","addmore_btn.svg");
+      document.getElementById("attach").style.opacity="1";
+      document.getElementById("attach").style.border=" border: 1px solid white;";
+      document.getElementById('show_more').style.display="block";
     }
 };
-
+function a(){
+  console.log(allConvertedFiles);
+}
 document.getElementById('attach').addEventListener('mouseover',()=>{
 
 
@@ -78,7 +83,30 @@ document.getElementById('cancel').addEventListener('click',()=>{
   
 
 })
+ 
 
+document.getElementById("show_more").addEventListener('click',()=>{
+  document.getElementById("show_attach").style.display="block";
+
+    var list_item,btn;
+
+    allConvertedFiles.forEach(element => {
+      list_item=document.createElement("li");
+      list_item.innerText=element.name+"     ";
+      btn=document.createElement('button');
+      btn.innerText="x"
+       
+      document.getElementById('list').appendChild(list_item);
+      list_item.appendChild(btn);
+    });
+    
+
+
+})
+document.getElementById("list_cancel").addEventListener('click',()=>{
+  document.getElementById("show_attach").style.display="none";
+  document.getElementById('list').innerHTML="";
+})
 
  function to_up(){
 

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="23.319967mm"
+   height="10.272791mm"
+   viewBox="0 0 23.319967 10.272791"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-47.804494,-166.91101)">
+    <g
+       id="g3">
+      <rect
+         style="fill:#ffffff;fill-opacity:0.737132;stroke:#000000;stroke-width:0.999999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         id="rect1"
+         width="22.319971"
+         height="9.2727976"
+         x="48.304493"
+         y="167.411"
+         ry="3.1975212" />
+      <g
+         id="g2"
+         transform="matrix(0.64401452,0,0,0.58020167,22.873283,72.272096)"
+         style="stroke:#000000;stroke-width:1.14515;stroke-dasharray:none;stroke-opacity:1">
+        <path
+           style="fill:#ffffff;fill-opacity:0.966189;stroke:#000000;stroke-width:1.14515;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+           d="m 68.280509,168.65725 0.03379,7.2301"
+           id="path1" />
+        <path
+           style="fill:#ffffff;fill-opacity:0.966189;stroke:#000000;stroke-width:1.14515;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+           d="m 71.878703,172.278 -7.23017,-0.0114"
+           id="path2"
+           inkscape:transform-center-x="0.033785507"
+           inkscape:transform-center-y="0.033785507" />
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-size:3.0987px;line-height:2.6;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic, Normal';letter-spacing:0.280173px;fill:#ffffff;fill-opacity:0.966189;stroke:#000000;stroke-width:0.6;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         x="57.180874"
+         y="148.23364"
+         id="text2"
+         transform="scale(0.85564222,1.1687128)"><tspan
+           sodipodi:role="line"
+           id="tspan2"
+           style="line-height:2.6;letter-spacing:0.280173px;stroke-width:0.6;stroke-dasharray:none"
+           x="57.180874"
+           y="148.23364">Add more</tspan></text>
+    </g>
+  </g>
+</svg>
