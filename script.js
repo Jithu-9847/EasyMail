@@ -4,6 +4,9 @@
 function  send() {
   
   if(document.getElementById('email').value!="" && document.getElementById('security').value!=""){
+     document.getElementById('progress').style.display="block";
+      document.getElementById('progress_img').setAttribute('src','processing-circle.gif');
+      document.getElementById('progress_line').innerText="Sending...";
     Email.send({ 
         Host : "smtp.elasticemail.com",
         Username: "programmer730608@gmail.com", 
